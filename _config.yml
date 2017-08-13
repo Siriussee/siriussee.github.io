@@ -1,23 +1,22 @@
 # Site settings
 title: Sirius Blog
-SEOTitle: Sirius Blog
+SEOTitle: Sirius的博客 | Sirius Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: " description NULL"
-keyword: "key word, NULL"
-url: "https://siriussee.info"              # your host, for absolute URL
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+email: sirius0see@gmail.com
+description: ""
+keyword: ""
+url: "http://siriussee.info"              # your host, for absolute URL
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
 # SNS settings
 RSS: false
-weibo_username:     NULL
-zhihu_username:     NULL
-github_username:    NULL
-twitter_username:   NULL
+#weibo_username:     huxpro
+#zhihu_username:     huxpro
+github_username:    Siriussee
+#twitter_username:  huxpro
 #facebook_username:  huxpro
-# linkedin_username:  firstname-lastname-idxxxx
 
 
 
@@ -26,7 +25,7 @@ twitter_username:   NULL
 highlighter: rouge
 permalink: pretty
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
@@ -48,17 +47,19 @@ kramdown:
 
 
 # Disqus settings
-disqus_username: Sirius
+#disqus_username: _your_disqus_short_name_
 
-# Netease setttings
-netease_comment: false
+# Duoshuo settings
+duoshuo_username: Sirius
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
 
 
 
 # Analytics settings
-# Baidu Analytics 
-# ba_track_id: [your track id]
-
+# Baidu Analytics
+#ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 #ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
 #ga_domain: huangxuan.me
@@ -66,9 +67,9 @@ netease_comment: false
 
 
 # Sidebar settings
-sidebar: false                          # whether or not using Sidebar.
-#sidebar-about-description: "写写代码，做做设计，<br>离开世界之前，一切都是过程"
-#sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar: false                           # whether or not using Sidebar.
+sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
+sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -78,16 +79,22 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 
 
 
-# Progressive Web Apps
-chrome-tab-theme-color: "#000000"
-service-worker: true
-
-
-
 # Friends
-#friends: [
-    #{
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # }
-#]
+friends: [
+    {
+        title: "Hux Blog",
+        href: "http://huangxuan.me"
+    },{
+        title: "Foo",
+        href: "#"
+    },{
+        title: "Bar",
+        href: "#"
+    },{
+        title: "Example Friends",
+        href: "#"
+    },{
+        title: "It helps SEO",
+        href: "#"
+    }
+]
