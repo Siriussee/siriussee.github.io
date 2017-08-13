@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Test"
-subtitle:   "
+subtitle:   ""
 date:       2017-08-13 12:00:00
 author:     "SiriusSee"
 header-img: ""
