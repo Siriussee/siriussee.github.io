@@ -169,3 +169,18 @@ layout: default
 
 To be continued...
 
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '', // 可选。默认为 location.href
+  owner: 'siriussee',
+  repo: 'comment',
+  oauth: {
+    client_id: '33330f77fc5c090b329b',
+    client_secret: '20fc9d35757e32236d08164b140ca1da91232044',
+  },
+})
+gitment.render('container')
+</script>
