@@ -6,7 +6,7 @@ date:       2017-08-29 16:00:00
 author:     "Sirius"
 header-img: "img/blog-front.jpg"
 tags:
-    - github
+    - GitHub
     - howTo
     - blog
 ---
@@ -15,11 +15,11 @@ tags:
 <!-- TOC -->
 
 - [谨以此文献给还是小白的我](#谨以此文献给还是小白的我)
-- [Github Page](#github-page)
-    - [什么是 Github？](#什么是-github)
+- [GitHub Page](#github-page)
+    - [什么是 GitHub？](#什么是-github)
     - [那 Page 怎么来？](#那-page-怎么来)
 - [由此开始](#由此开始)
-    - [注册 github 账户](#注册-github-账户)
+    - [注册 GitHub 账户](#注册-github-账户)
     - [创建一个 repository](#创建一个-repository)
     - [New Template Renovation, A.K.A NTR](#new-template-renovation-aka-ntr)
         - [从别人手上夺过来](#从别人手上夺过来)
@@ -47,11 +47,11 @@ tags:
 >建立在GitHub上的网站当然需要遵守相关的用户守则，也就是说，你并不能完全地主宰自己文章的命运。
 >但是，相比于微信推送和微博，你的自由依然广阔。
 
-# Github Page
+# GitHub Page
 
-## 什么是 Github？
+## 什么是 GitHub？
 
-Github 是一个代码托管网站，时常被戏称为全球最大的同性交友平台。全世界无数程序员都会来到这里，“相互借鉴”，“协同合作”。我们可以把自己写的代码上传，这样全世界的Github用户都能够看到你的作品。或许过几天我会写一篇单独的博客来详细介绍一下GitHub。
+GitHub 是一个代码托管网站，时常被戏称为全球最大的同性交友平台。全世界无数程序员都会来到这里，“相互借鉴”，“协同合作”。我们可以把自己写的代码上传，这样全世界的GitHub用户都能够看到你的作品。或许过几天我会写一篇单独的博客来详细介绍一下GitHub。
 
 ## 那 Page 怎么来？
 
@@ -61,7 +61,7 @@ Github 是一个代码托管网站，时常被戏称为全球最大的同性交�
 
 # 由此开始
 
-## 注册 github 账户
+## 注册 GitHub 账户
 
 >你在找切换语言的选项吗？不存在的。请好好学习英语，并且善用 google translate。
 
@@ -71,17 +71,17 @@ Github 是一个代码托管网站，时常被戏称为全球最大的同性交�
 
 翻译成大白话，就是储存你的代码的“仓库”。
 
-请将这个 repository 命名为 `[yourname].github.io` 。
+请将这个 repository 命名为 `[yourname].GitHub.io` 。
 
 ![创建仓库](http://ovi1rdu1p.bkt.clouddn.com/create-repo.png)
 
 ## New Template Renovation, A.K.A NTR
 
-关于一个什么样的样式才是好的，这个问题实在是与诸位的审美有关，在此我便以github page 的第一个主题 `Cayman theme`为例，来讲讲怎么把别人的示例改成自己的博客。
+关于一个什么样的样式才是好的，这个问题实在是与诸位的审美有关，在此我便以GitHub page 的第一个主题 `Cayman theme`为例，来讲讲怎么把别人的示例改成自己的博客。
 
 ### 从别人手上夺过来
 
-从 [Cayman theme](https://github.com/pages-themes/cayman) 下载压缩包，保存并解压到随便一个位置。
+从 [Cayman theme](https://GitHub.com/pages-themes/cayman) 下载压缩包，保存并解压到随便一个位置。
 
 ![下载模板](http://ovi1rdu1p.bkt.clouddn.com/download-cayman.png)
 
@@ -141,7 +141,7 @@ layout: default
 
 ## 将你在本地的更改同步至 GitHub
 
-在 `[yourname].github.io` 这个仓库里面，选择upload file，并将`CAYMAN-MASTER` 文件夹内的全部内容上传，选择 `commit change`。
+在 `[yourname].GitHub.io` 这个仓库里面，选择upload file，并将`CAYMAN-MASTER` 文件夹内的全部内容上传，选择 `commit change`。
 
 ![上传文件](http://ovi1rdu1p.bkt.clouddn.com/upload-file.png)
 
@@ -150,10 +150,10 @@ layout: default
 如果不出意外的话，你会看到一行绿色的字，显示
 
  ``` 
- Your site is published at http://[yourname].github.io/
+ Your site is published at http://[yourname].GitHub.io/
  ```
 
- 这就说明你的博客已经正常运行啦！你可以先喝一口茶，然后进入 `http://[yourname].github.io/ ` 来观赏自己的成果。
+ 这就说明你的博客已经正常运行啦！你可以先喝一口茶，然后进入 `http://[yourname].GitHub.io/ ` 来观赏自己的成果。
 
  ![完成的样子](http://ovi1rdu1p.bkt.clouddn.com/blog-done.png)
 
@@ -170,12 +170,12 @@ layout: default
 To be continued...
 
 <div id="container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<link rel="stylesheet" href="https://imsun.GitHub.io/gitment/style/default.css">
+<script src="https://imsun.GitHub.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: '', // 可选。默认为 location.href
-  owner: 'siriussee',
+  id: 'location.href', // 可选。默认为 location.href
+  owner: 'Siriussee',
   repo: 'comment',
   oauth: {
     client_id: '33330f77fc5c090b329b',
