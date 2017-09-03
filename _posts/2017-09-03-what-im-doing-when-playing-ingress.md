@@ -4,7 +4,7 @@ title:      "当我说我在玩Ingress的时候，我在做什么"
 subtitle:   "我在拯救人类"
 date:       2017-09-04 23:00:00
 author:     "Sirius"
-header-img: "img/ingress-front.jpg"
+header-img: "img/ingress_front.jpg"
 tags:
     - Ingress
     - 生活
