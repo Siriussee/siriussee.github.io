@@ -75,20 +75,3 @@ Ingress 不仅仅是一个基于地理位置的阵营对抗游戏，也是一个
 饭，其名虽同，而其意各异。有无关游戏的单纯的开饭，也有开饭顺便收集游戏中的物资的，也有搞完大新闻之后，顺便开饭庆祝的。
 
 To be continued...
-
-<div id="container"></div>
-<link rel="stylesheet" href="https://imsun.GitHub.io/gitment/style/default.css">
-<script src="https://imsun.GitHub.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: 'location.href', // 可选。默认为 location.href
-  owner: 'Siriussee',
-  repo: 'comment',
-  oauth: {
-    client_id: '33330f77fc5c090b329b',
-    client_secret: '20fc9d35757e32236d08164b140ca1da91232044',
-  },
-})
-gitment.render('container')
-</script>
-

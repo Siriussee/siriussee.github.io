@@ -190,6 +190,10 @@ China - Shanghai (cnsha02)	        Packets lost (100%)		243.185.187.39
 
 ### Gitment
 
+>upadte 2017/09/13
+>我发现这个 Gitment 似乎不是这样用的，然而这段时间事务繁杂，无心写blog，容我何时偷闲来重新整理这一部分的内容。
+>为了避免 gitment 造成的困扰，我决定暂时关闭本 blog 的 gitment 系统。有事请在 Telegram @SiriusSee 。感谢。
+
 所幸天无绝人之路，[Gitment](https://imsun.net/posts/gitment-introduction/)横空出世。
 
 Gitment使用Github的issue功能来当作储存评论的仓库，这样就解决了评论的储存问题。此外，由于Github本身支持Markdown格式的issue，所以说，我们的评论甚至可以用Markdown格式来写。
@@ -241,19 +245,3 @@ Gitment存在一些微小的不足，但是瑕不掩瑜。
 ## 定制域名！
 
 To be continued...
-
-<div id="container"></div>
-<link rel="stylesheet" href="https://imsun.GitHub.io/gitment/style/default.css">
-<script src="https://imsun.GitHub.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: 'location.href', // 可选。默认为 location.href
-  owner: 'Siriussee',
-  repo: 'comment',
-  oauth: {
-    client_id: '33330f77fc5c090b329b',
-    client_secret: '20fc9d35757e32236d08164b140ca1da91232044',
-  },
-})
-gitment.render('container')
-</script>
