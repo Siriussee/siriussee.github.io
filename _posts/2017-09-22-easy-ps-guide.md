@@ -7,6 +7,7 @@ author:     "Sirius"
 header-img: "img/ps-guide.jpg"
 tags:
     - Photoshop
+    - howTo
 ---
 # 声明
 
