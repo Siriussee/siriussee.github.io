@@ -15,7 +15,7 @@ tags:
 }
 #del-moment{
     margin: auto;
-    width: 30%;
+    width: 50%;
 }
 .qua-mark{
     width: 5%;
@@ -35,6 +35,22 @@ tags:
     margin: auto;
     width: 30%; 
 }
+.other{
+    margin:0;
+    padding:8px 8px; 
+    border-radius:10px;
+    box-shadow: 1px 1px 1px #888888;
+    overflow:hidden;
+}
+.mine{
+    margin:0;
+    background-color:rgb(239, 253, 222);
+    float:right;
+    padding:8px 8px; 
+    border-radius:10px;
+    box-shadow: 1px 1px 2px #888888;
+}
+
 </style>
 
 # Hey, Siri. 附近最近的宾馆在哪里？
@@ -97,13 +113,13 @@ hack key 是另一件极度无聊的事情。它能带给我的唯一乐趣，�
 
 可是，如果想要开黑牌的话，还要同步清障，还要射拦截，还要做底边……想想就麻烦，不然还是……**等等，谁找我？**
 
->往【南沙】方向，你们看岛上需要连不?
+<p class="other" style="width:270px"><span class="name">Slcio</span><br>往【南沙】方向，你们看岛上需要连不?</p>
 
->我最近会去一趟，可以拿个几十把回来。
+<p class="other" style="width:270px">我最近会去一趟，可以拿个几十把回来。</p>
 
->那，我拿你那开个牌？
+<p class="mine">那，我拿你那开个牌？</p>
 
->开。
+<p class="other" style="width:30px">开。</p>
 
 ## 0x03
 
