@@ -31,6 +31,10 @@ tags:
 .no-margin{
     margin: 0 0 0 0;
 }
+#long-ma{
+    margin: auto;
+    width: 30%; 
+}
 </style>
 
 # Hey, Siri. 附近最近的宾馆在哪里？
@@ -65,7 +69,7 @@ hack key 是另一件极度无聊的事情。它能带给我的唯一乐趣，�
 
 我停下脚步。
 
-<img class="qua-mark" src="http://ovi1rdu1p.bkt.clouddn.com/qua-mark.png">
+<p class="no-margin"><img class="qua-mark" src="http://ovi1rdu1p.bkt.clouddn.com/qua-mark.png"></p>
 
 <p class="qua">你知道最近的宾馆在哪吗？</p>
 
@@ -145,7 +149,7 @@ hack key 是另一件极度无聊的事情。它能带给我的唯一乐趣，�
 
 有肉一起吃，有车一起上。我当即询问了岛上的几位小伙伴。
 
->龙妈：你想要黑牌吗。jpg
+<img id="long-ma" src="http://ovi1rdu1p.bkt.clouddn.com/like-onxy-madel.jpg" alt="龙妈：要黑牌吗">
 
 > Archernara 好诶,那我就留下了
 
@@ -244,13 +248,13 @@ for (var i = 0; i < ENL.length; ++i)
 
 一对情侣从中心花坛的阴影当中走出来，我识相地别过头去。
 
-<img class="qua-mark" src="http://ovi1rdu1p.bkt.clouddn.com/qua-mark.png">
+<p class="no-margin"><img class="qua-mark" src="http://ovi1rdu1p.bkt.clouddn.com/qua-mark.png"></p>
 
 <p class="qua">Hey, Siri!</p>
 
 我捏下刹车。
 
-<img class="qua-mark" src="http://ovi1rdu1p.bkt.clouddn.com/qua-mark.png">
+<p class="no-margin"><img class="qua-mark" src="http://ovi1rdu1p.bkt.clouddn.com/qua-mark.png"></p>
 
 <p class="qua">你知道最近的宾馆在哪吗？</p>
 
