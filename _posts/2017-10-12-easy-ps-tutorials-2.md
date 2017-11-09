@@ -3,7 +3,7 @@ layout:     post
 title:      "Photoshop简明教程II"
 subtitle:   "You Are Not Prepared!"
 date:       2017-10-12 13:00:00
-author:     "Sirius"！
+author:     "Sirius"
 header-img: "img/ps_2.jpg"
 tags:
     - Photoshop
