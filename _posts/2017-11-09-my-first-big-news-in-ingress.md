@@ -138,23 +138,23 @@ hack key 是另一件极度无聊的事情。它能带给我的唯一乐趣，�
 循着 SunSunLAW 给出的 ID 寻找下去，几位特工都欣然应允。
 
 <p class="box" style="width:100px"><span class="name">Sslian</span><br>
-/OK
+/OK</p>
 
 <p class="box" style="width:150px"><span class="name">WatanabeNan</span><br>
- 一定尽力而为
+ 一定尽力而为</p>
 
 <p class="box" style="width:100px"><span class="name">DeadShip2003</span><br>
- 好吧
+ 好吧</p>
 
 另外，还有几条从博物馆射出的 link ，我找到了之前早有合作的 este36
 
 <p class="box" style="width:300px"><span class="name">este36 </span><br>
-好的，到时候我去博物馆待命吧
+好的，到时候我去博物馆待命吧</p>
 
 解决了东北-西南走向的 block links 之后，问题就像降低了一个维度——底边没有任何阻挡，而另一条腰上只有零星两三根或蓝或绿的 block link 。关于这几条零星的 block ，AprilDEF 决定**提前一天**前往亚运城清理 ENL link ，而其他部分，我联系了 Saaaage。
 
 <p class="box" style="width:100px"><span class="name">Saaaage </span><br>
-ok
+ok</p>
 
 至此，关于这次黑牌计划的清障工作已经完全做好了。嗯，**完全**。
 
@@ -169,19 +169,19 @@ ok
 <img id="long-ma" src="http://ovi1rdu1p.bkt.clouddn.com/like-onxy-madel.jpg" alt="龙妈：要黑牌吗">
 
 <p class="box" style="width:200px"><span class="name">Archernara</span><br>
- 好诶,那我就留下了
+ 好诶,那我就留下了</p>
 
 <p class="box" style="width:200px"><span class="name">ikiwixx </span><br>
- 似乎达成了共识/滑稽
+ 似乎达成了共识/滑稽</p>
 
 <p class="box" style="width:200px"><span class="name">CourtingJuans </span><br>
-算上 juananss 一份
+算上 juananss 一份</p>
 
 <p class="box" style="width:200px"><span class="name">ArielAxionL</span><br>
-广大还可以出两个人
+广大还可以出两个人</p>
 
 <p class="box" style="width:200px"><span class="name">Howeverkcy</span><br>
-我还没黑
+我还没黑</p>
 
 怎么就突然这么多人了？我一台核载四人的小轿车，怎么就有七个人想上车？乖乖，超载可是违法的。
 
@@ -206,19 +206,19 @@ for (var i = 0; i < ENL.length; ++i)
 ## 0x05
 
 <p class="box" style="width:200px"><span class="name">Slcio </span><br>
-又要多个人亚运城了
+又要多个人亚运城了</p>
 
 <p class="box mine" style="width:200px">
-省中医被XJBL了
+省中医被XJBL了</p>
 
 <p class="box mine" style="width:200px">
-广工还有一条block
+广工还有一条block</p>
 
 <p class="box" style="width:200px"><span class="name">este36</span><br>
-他又射去龙湾公园了
+他又射去龙湾公园了</p>
 
 <p class="box" style="width:500px">
-我们好像忘记跟鸡鸡煲说了，他从长亭射过来市桥了 
+我们好像忘记跟鸡鸡煲说了，他从长亭射过来市桥了 </p>
 
 如果不谈岛上和大石出现的数次 XJBL ，和亚运城再度出现的 ENL block ，时间很快就推进到了开黑行动的当日。
 
@@ -246,7 +246,7 @@ for (var i = 0; i < ENL.length; ++i)
 **为什么我的link没有field？**
 
 <p class="box" style="width:300px"><span class="name">Slcio </span><br>
-你们怎么样了？我马上到，2分钟内。
+你们怎么样了？我马上到，2分钟内。</p>
 
 真就在两分钟之后，底边建起来了。广美小队 ikiwixx 拿起了开黑第一棒，向北方进发。57分， 完成了广美18层CF的建立，ikiwixx  拿到了本次开黑的首块黑牌。
 
@@ -255,20 +255,21 @@ for (var i = 0; i < ENL.length; ++i)
 **为什么我不能射去顺德？**
 
 <p class="box" style="width:200px"><span class="name">Slcio </span><br>
-Intel 看看怎么回事？
+Intel 看看怎么回事？</p>
+
 <p class="box mine" style="width:200px">
-毒少了。快点回去毒。
+毒少了。快点回去毒。</p>
 
 不断重复着 link - move 的循环，17时29分，八个人的黑牌早已刷够，然而  key 还有很多没有用完，于是这台大客车又上来了几个人。
 
 <p class="box" style="width:200px"><span class="name">Howeverkcy</span><br>
-> 看看能不能喝汤
+看看能不能喝汤</p>
 
 <p class="box" style="width:200px"><span class="name">ArielAxionL </span><br>
-> 刚到城北,有多我蹭
+刚到城北,有多我蹭</p>
 
 <p class="box" style="width:400px"><span class="name">Ericwyn </span><br>
-> 其实还是不太清楚发生了什么，但是已经在路上了
+其实还是不太清楚发生了什么，但是已经在路上了</p>
 
 我就静静地坐在一个巨大的雕塑下面，看着 Ingress log 里面，临时上车的各位 Agent 各种群魔乱舞。不知不觉，时钟指向了18时10分。
 
