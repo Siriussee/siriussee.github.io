@@ -35,20 +35,16 @@ tags:
     margin: auto;
     width: 30%; 
 }
-.other{
-    margin:0;
+.box{
+    margin: 5px 5px 5px 5px;
     padding:8px 8px; 
     border-radius:10px;
     box-shadow: 1px 1px 1px #888888;
     overflow:hidden;
+    display:block;
 }
 .mine{
-    margin:0;
     background-color:rgb(239, 253, 222);
-    float:right;
-    padding:8px 8px; 
-    border-radius:10px;
-    box-shadow: 1px 1px 2px #888888;
 }
 
 </style>
@@ -113,13 +109,13 @@ hack key 是另一件极度无聊的事情。它能带给我的唯一乐趣，�
 
 可是，如果想要开黑牌的话，还要同步清障，还要射拦截，还要做底边……想想就麻烦，不然还是……**等等，谁找我？**
 
-<p class="other" style="width:270px"><span class="name">Slcio</span><br>往【南沙】方向，你们看岛上需要连不?</p>
+<p class="box" style="width:300px"><span class="name">Slcio</span><br>往【南沙】方向，你们看岛上需要连不?</p>
 
-<p class="other" style="width:270px">我最近会去一趟，可以拿个几十把回来。</p>
+<p class="box" style="width:320px">我最近会去一趟，可以拿个几十把回来。</p>
 
-<p class="mine">那，我拿你那开个牌？</p>
+<p class="box mine" style="width:180px">那，我拿那儿开个牌？</p>
 
-<p class="other" style="width:30px">开。</p>
+<p class="box" style="width:50px">开。</p>
 
 ## 0x03
 
@@ -131,29 +127,34 @@ hack key 是另一件极度无聊的事情。它能带给我的唯一乐趣，�
 
 果然还是要找人**清障**啊。
 
-于是乎，在 Intel Map 上左看看，右看看，便找上了一个活跃的当地友军 SunSunLAW 。
+于是乎，在 Intel Map 上左看看，右看看，便找上了活跃的当地友军 SunSunLAW 。
 
-> SunSunLAW 大佬，我们打算在大学城开黑牌，想请问一下【大石】附近能不能帮忙清一下障，或者哪些友军能够帮忙清障？要清的部分就是红圈标出来的那些 Portals 。
-
-> 左边的红圈是 Sslian 去很方便，右手边是 DeadShip2003 活跃，还有近期有个很活跃的新人 WatanabeNan 。
-
-> 感谢 SunSunLAW 引荐~
+<p class="box mine" style="width:px">dalao，我们打算在大学城开黑牌，想请问一下【大石】附近能不能帮忙清一下障，或者哪些友军能够帮忙清障？要清的部分就是红圈标出来的那些 Portals 。</p>
+<p class="box" style="width:px"><span class="name">SunSunLAW</span><br>
+左边的红圈是 Sslian 去很方便，右手边是 DeadShip2003 活跃，还有近期有个很活跃的新人 WatanabeNan 。</p>
+<p class="box mine" style="width:200px">
+感谢 SunSunLAW 引荐~</p>
 
 循着 SunSunLAW 给出的 ID 寻找下去，几位特工都欣然应允。
 
-> Sslian /OK
+<p class="box" style="width:100px"><span class="name">Sslian</span><br>
+/OK
 
-> WatanabeNan 一定尽力而为
+<p class="box" style="width:150px"><span class="name">WatanabeNan</span><br>
+ 一定尽力而为
 
-> DeadShip2003 好吧
+<p class="box" style="width:100px"><span class="name">DeadShip2003</span><br>
+ 好吧
 
 另外，还有几条从博物馆射出的 link ，我找到了之前早有合作的 este36
 
-> este36 好的，到时候我去博物馆待命吧
+<p class="box" style="width:300px"><span class="name">este36 </span><br>
+好的，到时候我去博物馆待命吧
 
 解决了东北-西南走向的 block links 之后，问题就像降低了一个维度——底边没有任何阻挡，而另一条腰上只有零星两三根或蓝或绿的 block link 。关于这几条零星的 block ，AprilDEF 决定**提前一天**前往亚运城清理 ENL link ，而其他部分，我联系了 Saaaage。
 
-> Saaaage ok
+<p class="box" style="width:100px"><span class="name">Saaaage </span><br>
+ok
 
 至此，关于这次黑牌计划的清障工作已经完全做好了。嗯，**完全**。
 
@@ -167,15 +168,20 @@ hack key 是另一件极度无聊的事情。它能带给我的唯一乐趣，�
 
 <img id="long-ma" src="http://ovi1rdu1p.bkt.clouddn.com/like-onxy-madel.jpg" alt="龙妈：要黑牌吗">
 
-> Archernara 好诶,那我就留下了
+<p class="box" style="width:200px"><span class="name">Archernara</span><br>
+ 好诶,那我就留下了
 
-> ikiwixx 似乎达成了共识/滑稽
+<p class="box" style="width:200px"><span class="name">ikiwixx </span><br>
+ 似乎达成了共识/滑稽
 
-> CourtingJuans 算上 juananss 一份
+<p class="box" style="width:200px"><span class="name">CourtingJuans </span><br>
+算上 juananss 一份
 
-> ArielAxionL 广大还可以出两个人
+<p class="box" style="width:200px"><span class="name">ArielAxionL</span><br>
+广大还可以出两个人
 
-> Howeverkcy 我还没黑
+<p class="box" style="width:200px"><span class="name">Howeverkcy</span><br>
+我还没黑
 
 怎么就突然这么多人了？我一台核载四人的小轿车，怎么就有七个人想上车？乖乖，超载可是违法的。
 
@@ -199,15 +205,20 @@ for (var i = 0; i < ENL.length; ++i)
 
 ## 0x05
 
-> 又要多个人亚运城了
+<p class="box" style="width:200px"><span class="name">Slcio </span><br>
+又要多个人亚运城了
 
-> 省中医被XJBL了
+<p class="box mine" style="width:200px">
+省中医被XJBL了
 
-> 广工还有一条block
+<p class="box mine" style="width:200px">
+广工还有一条block
 
-> 他又射去龙湾公园了 est
+<p class="box" style="width:200px"><span class="name">este36</span><br>
+他又射去龙湾公园了
 
-> 我们好像忘记跟鸡鸡煲说了，他从长亭射过来市桥了 
+<p class="box" style="width:500px">
+我们好像忘记跟鸡鸡煲说了，他从长亭射过来市桥了 
 
 如果不谈岛上和大石出现的数次 XJBL ，和亚运城再度出现的 ENL block ，时间很快就推进到了开黑行动的当日。
 
@@ -228,13 +239,14 @@ for (var i = 0; i < ENL.length; ++i)
         - este36
         - Sslian
 - 建立底边
-        -  Slcio 
+        - Slcio 
 ```
 14时26分，**三队**人马站定，一声令下，动物园与博物馆的 block 齐声断裂，两条长 link 从大学城出发，走向顺德与南沙。然而，
 
 **为什么我的link没有field？**
 
->Slcio 你们怎么样了？我马上到，2分钟内。
+<p class="box" style="width:300px"><span class="name">Slcio </span><br>
+你们怎么样了？我马上到，2分钟内。
 
 真就在两分钟之后，底边建起来了。广美小队 ikiwixx 拿起了开黑第一棒，向北方进发。57分， 完成了广美18层CF的建立，ikiwixx  拿到了本次开黑的首块黑牌。
 
@@ -242,21 +254,25 @@ for (var i = 0; i < ENL.length; ++i)
 
 **为什么我不能射去顺德？**
 
-> Intel看看怎么回事？
-
-> 毒少了。快点回去毒。
+<p class="box" style="width:200px"><span class="name">Slcio </span><br>
+Intel 看看怎么回事？
+<p class="box mine" style="width:200px">
+毒少了。快点回去毒。
 
 不断重复着 link - move 的循环，17时29分，八个人的黑牌早已刷够，然而  key 还有很多没有用完，于是这台大客车又上来了几个人。
 
+<p class="box" style="width:200px"><span class="name">Howeverkcy</span><br>
 > 看看能不能喝汤
 
+<p class="box" style="width:200px"><span class="name">ArielAxionL </span><br>
 > 刚到城北,有多我蹭
 
+<p class="box" style="width:400px"><span class="name">Ericwyn </span><br>
 > 其实还是不太清楚发生了什么，但是已经在路上了
 
 我就静静地坐在一个巨大的雕塑下面，看着 Ingress log 里面，临时上车的各位 Agent 各种群魔乱舞。不知不觉，时钟指向了18时10分。
 
-**It's time to ~~move~~ /kaifan!**
+<p style="font-size:30px;font-weight:bold;;"> It's time to <del>move</del> /kaifan!</p>
 
 ## 0x06
 
