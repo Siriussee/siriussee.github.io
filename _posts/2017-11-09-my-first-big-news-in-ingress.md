@@ -18,8 +18,8 @@ tags:
     width: 30%;
 }
 .qua-mark{
-    width: 5%;  
-    margin-top:15px;
+    width: 5%;
+    margin: 0 0 0 0;!important
 }
 .qua{
     margin:0px;
@@ -27,6 +27,9 @@ tags:
     color:#9B9B9B;
     margin-left: 45px;
     margin-bottom:30px;
+}
+.no-margin{
+    margin: 0 0 0 0;
 }
 </style>
 
@@ -56,7 +59,7 @@ hack key 是另一件极度无聊的事情。它能带给我的唯一乐趣，�
 
 突然，身后的男声一把叫住了我：
 
-<img class="qua-mark" src="http://ovi1rdu1p.bkt.clouddn.com/qua-mark.png">
+<p class="no-margin"><img class="qua-mark" src="http://ovi1rdu1p.bkt.clouddn.com/qua-mark.png"></p>
 
 <p class="qua">Hey, Siri!</p>
 
