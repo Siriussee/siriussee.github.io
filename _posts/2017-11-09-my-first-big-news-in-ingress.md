@@ -4,7 +4,7 @@ title:      "Hey, Siri.附近最近的宾馆在哪"
 subtitle:   "No way."
 date:       2017-11-09 16:00:00
 author:     "Sirius"
-header-img: "img/banner-short.png"
+header-img: "img/banner-short.jpg"
 tags:
     - Ingress
 ---
@@ -19,7 +19,7 @@ tags:
 }
 .qua-mark{
     width: 5%;
-    margin: 0 0 0 0;!important
+    margin: 0 0 0 0 !important;
 }
 .qua{
     margin:0px;
