@@ -46,6 +46,10 @@ tags:
 .mine{
     background-color:rgb(239, 253, 222);
 }
+.name{
+    color:rgb(206, 103, 27);
+    font-size:14px;
+}
 
 </style>
 
@@ -109,7 +113,7 @@ hack key 是另一件极度无聊的事情。它能带给我的唯一乐趣，�
 
 可是，如果想要开黑牌的话，还要同步清障，还要射拦截，还要做底边……想想就麻烦，不然还是……**等等，谁找我？**
 
-<p class="box" style="width:300px"><span class="name">Slcio</span><br>往【南沙】方向，你们看岛上需要连不?</p>
+<p class="box" style="width:300px"><span class="name">Slcio</span><br>往南沙方向，你们看岛上需要连不?</p>
 
 <p class="box" style="width:320px">我最近会去一趟，可以拿个几十把回来。</p>
 
@@ -129,7 +133,7 @@ hack key 是另一件极度无聊的事情。它能带给我的唯一乐趣，�
 
 于是乎，在 Intel Map 上左看看，右看看，便找上了活跃的当地友军 SunSunLAW 。
 
-<p class="box mine" style="width:px">dalao，我们打算在大学城开黑牌，想请问一下【大石】附近能不能帮忙清一下障，或者哪些友军能够帮忙清障？要清的部分就是红圈标出来的那些 Portals 。</p>
+<p class="box mine" style="width:px">dalao，我们打算在大学城开黑牌，想请问一下大石附近能不能帮忙清一下障，或者哪些友军能够帮忙清障？要清的部分就是红圈标出来的那些 Portals 。</p>
 <p class="box" style="width:px"><span class="name">SunSunLAW</span><br>
 左边的红圈是 Sslian 去很方便，右手边是 DeadShip2003 活跃，还有近期有个很活跃的新人 WatanabeNan 。</p>
 <p class="box mine" style="width:200px">
@@ -143,7 +147,7 @@ hack key 是另一件极度无聊的事情。它能带给我的唯一乐趣，�
 <p class="box" style="width:150px"><span class="name">WatanabeNan</span><br>
  一定尽力而为</p>
 
-<p class="box" style="width:100px"><span class="name">DeadShip2003</span><br>
+<p class="box" style="width:150px"><span class="name">DeadShip2003</span><br>
  好吧</p>
 
 另外，还有几条从博物馆射出的 link ，我找到了之前早有合作的 este36
@@ -187,11 +191,12 @@ ok</p>
 
 > 《道路交通安全法》 第四十九条　机动车载人不得超过核定的人数，客运机动车不得违反规定载货。
 
-为了避免交通事故，我找到了负责底边的 Slcio ，如果能够毒几轮，那小轿车就能进化成**大客车**。
+为了避免交通事故，我找到了负责底边的 Slcio 和 WhiteHatCN ，如果能够毒几轮，那小轿车就能进化成**大客车**。
 
-> Slcio 找个人跟我来，一起摸了带key回去。我在这里等射底边，key足够的情况下可以毒多几轮。
+<p class="box" style="width:px"><span class="name">Slcio </span><br>
+找个人跟我来，一起摸了带key回去。我和 WhiteHatCN 在这里等射底边，key足够的情况下可以毒多几轮。</p>
 
-这样情况就明朗了：在开牌之前，我先去一趟【南沙】摸key，并且带回岛上， Slcio 则留在【南沙】。在开黑牌的时候，我们每完成一轮， Slcio 就把底边毒掉，我们又可以重新再拉一次。三个po毒两轮的话，就有六倍于前的 MUs，也就是说，核载四人的小轿车进化成了**核载二十四人的大客车**。
+这样情况就明朗了：在开牌之前，我先去一趟南沙摸key，并且带回岛上， Slcio 则留在南沙。在开黑牌的时候，我们每完成一轮， WhiteHatCN 就把底边毒掉，我们又可以重新再拉一次。三个po毒两轮的话，就有六倍于前的 MUs，也就是说，核载四人的小轿车进化成了**核载二十四人的大客车**。
 
 这样一来，原本的半小时作业就拉长成了三个小时的大工程，附近的 ENL Agent 们肯定是不会坐看自己反复被盖的。
 
@@ -215,10 +220,10 @@ for (var i = 0; i < ENL.length; ++i)
 广工还有一条block</p>
 
 <p class="box" style="width:200px"><span class="name">este36</span><br>
-他又射去龙湾公园了</p>
+有人射去龙湾公园了</p>
 
 <p class="box" style="width:500px">
-我们好像忘记跟鸡鸡煲说了，他从长亭射过来市桥了 </p>
+我们好像忘记跟 JiJboom 说了，他从长亭射过来市桥了 </p>
 
 如果不谈岛上和大石出现的数次 XJBL ，和亚运城再度出现的 ENL block ，时间很快就推进到了开黑行动的当日。
 
@@ -239,13 +244,14 @@ for (var i = 0; i < ENL.length; ++i)
         - este36
         - Sslian
 - 建立底边
-        - Slcio 
+        - Slcio
+        - WhiteHatCN
 ```
 14时26分，**三队**人马站定，一声令下，动物园与博物馆的 block 齐声断裂，两条长 link 从大学城出发，走向顺德与南沙。然而，
 
 **为什么我的link没有field？**
 
-<p class="box" style="width:300px"><span class="name">Slcio </span><br>
+<p class="box" style="width:300px"><span class="name">WhiteHatCN</span><br>
 你们怎么样了？我马上到，2分钟内。</p>
 
 真就在两分钟之后，底边建起来了。广美小队 ikiwixx 拿起了开黑第一棒，向北方进发。57分， 完成了广美18层CF的建立，ikiwixx  拿到了本次开黑的首块黑牌。
@@ -266,7 +272,7 @@ Intel 看看怎么回事？</p>
 看看能不能喝汤</p>
 
 <p class="box" style="width:200px"><span class="name">ArielAxionL </span><br>
-刚到城北,有多我蹭</p>
+刚到城北，有多我蹭</p>
 
 <p class="box" style="width:400px"><span class="name">Ericwyn </span><br>
 其实还是不太清楚发生了什么，但是已经在路上了</p>
@@ -292,3 +298,31 @@ Intel 看看怎么回事？</p>
 <p class="qua">你知道最近的宾馆在哪吗？</p>
 
 没有，滚。
+
+## Statistics
+
+本次开黑牌行动所建立的 Control Fields ，单层最小 420kMUs，最大 540kMUs，共计174层，总计83.34mMUs，为12位 Agents 提供了大量 MUs，其中8位获得了 Illminator Onyx Medal *。
+
+- ikiwixx       * +
+- BalthildIres  *
+- SiriusSee     * + + +
+- fishkq        *
+- EnlightenedMW +
+- DeadLggg      * +
+- Archernara    *
+- AprilDEF      +
+- Ericwyn       *
+- Howeverkcy    * + +
+- ArielAxionL
+- WhiteHatCN    +
+
+此外，这12位 Agent 包揽了 AS13-NOVEMBER-01 2017.41 检查点的 TOP12。当然，荣耀同时也应归于清障 + 、hack key + 、传key + 的人。
+
+- este36
+- Sslian
+- Saaaage
+- DeadShip2003
+- WatanabeNan
+- Slcio
+- GwokTsyn
+- ccreamini
