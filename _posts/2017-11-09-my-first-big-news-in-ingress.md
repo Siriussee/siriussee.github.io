@@ -15,7 +15,18 @@ tags:
 }
 #del-moment{
     margin: auto;
-    width: 40%;
+    width: 30%;
+}
+.qua-mark{
+    width: 5%;  
+    margin-top:15px;
+}
+.qua{
+    margin:0px;
+    font-weight:bold;
+    color:#9B9B9B;
+    margin-left: 45px;
+    margin-bottom:30px;
 }
 </style>
 
@@ -45,11 +56,15 @@ hack key 是另一件极度无聊的事情。它能带给我的唯一乐趣，�
 
 突然，身后的男声一把叫住了我：
 
-"Hey, Siri!"
+<img class="qua-mark" src="http://ovi1rdu1p.bkt.clouddn.com/qua-mark.png">
+
+<p class="qua">Hey, Siri!</p>
 
 我停下脚步。
 
-“**你知道最近的宾馆在哪吗？**”
+<img class="qua-mark" src="http://ovi1rdu1p.bkt.clouddn.com/qua-mark.png">
+
+<p class="qua">你知道最近的宾馆在哪吗？</p>
 
 他手上的 Siri 替我回答了这个令人尴尬的问题：
 
@@ -226,10 +241,14 @@ for (var i = 0; i < ENL.length; ++i)
 
 一对情侣从中心花坛的阴影当中走出来，我识相地别过头去。
 
-"Hey, Siri!"
+<img class="qua-mark" src="http://ovi1rdu1p.bkt.clouddn.com/qua-mark.png">
+
+<p class="qua">Hey, Siri!</p>
 
 我捏下刹车。
 
- “**你知道最近的宾馆在哪吗？**”
+<img class="qua-mark" src="http://ovi1rdu1p.bkt.clouddn.com/qua-mark.png">
+
+<p class="qua">你知道最近的宾馆在哪吗？</p>
 
 没有，滚。
