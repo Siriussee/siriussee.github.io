@@ -9,10 +9,13 @@ tags:
     - Ingress
 ---
 <style>
-.center {
+#farm-track {
     margin: auto;
-    width: 60%;
-    padding: 10px;
+    width: 40%;
+}
+#del-moment{
+    margin: auto;
+    width: 40%;
 }
 </style>
 
@@ -30,11 +33,11 @@ tags:
 
 hack key 是另一件极度无聊的事情。它能带给我的唯一乐趣，大概只有绕圈所形成的轨迹了。
 
-<img src="http://ovi1rdu1p.bkt.clouddn.com/jb-like-track.png" alt="广外耕田轨迹截图">
+<img id="farm-track" src="http://ovi1rdu1p.bkt.clouddn.com/jb-like-track.png" alt="广外耕田轨迹截图">
 
 这个杰宝形的轨迹最初还能在朋友圈上引得朋友一阵笑声，博得为数不多的几个 like 。然而，两三次故技重施之后，连那几个为数不多的 like 也全然消失，无迹可寻了。我便索性删掉朋友圈里的全部杰宝轨迹——与其看着空荡荡的点赞列表，不如忘记它，就像此事从未发生过。
 
-![del-mement](del-moment.jpg)
+<img id="del-moment" src="http://ovi1rdu1p.bkt.clouddn.com/del-moment.jpg" alt="删除朋友圈">
 
 就算没有朋友圈可发，key 依旧不能停。去隔壁学校转圈依旧是每日必修。
 
