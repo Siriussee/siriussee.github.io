@@ -127,7 +127,7 @@ hack key 是另一件极度无聊的事情。它能带给我的唯一乐趣，�
 
 然而，事情总是没有想象中的那么顺利。Draw Tool 一画， Cross Link 一开，满眼皆红，以挡住**东北-西南走向的腰**的 block link 为甚。
 
-//iitc cross link with blur and red circles
+![IITC](http://ovi1rdu1p.bkt.clouddn.com/IITC-BLOCK.jpg)
 
 果然还是要找人**清障**啊。
 
@@ -136,8 +136,6 @@ hack key 是另一件极度无聊的事情。它能带给我的唯一乐趣，�
 <p class="box mine" style="width:px">dalao，我们打算在大学城开黑牌，想请问一下大石附近能不能帮忙清一下障，或者哪些友军能够帮忙清障？要清的部分就是红圈标出来的那些 Portals 。</p>
 <p class="box" style="width:px"><span class="name">SunSunLAW</span><br>
 左边的红圈是 Sslian 去很方便，右手边是 DeadShip2003 活跃，还有近期有个很活跃的新人 WatanabeNan 。</p>
-<p class="box mine" style="width:200px">
-感谢 SunSunLAW 引荐~</p>
 
 循着 SunSunLAW 给出的 ID 寻找下去，几位特工都欣然应允。
 
@@ -196,7 +194,7 @@ ok</p>
 <p class="box" style="width:px"><span class="name">Slcio </span><br>
 找个人跟我来，一起摸了带key回去。我和 WhiteHatCN 在这里等射底边，key足够的情况下可以毒多几轮。</p>
 
-这样情况就明朗了：在开牌之前，我先去一趟南沙摸key，并且带回岛上， Slcio 则留在南沙。在开黑牌的时候，我们每完成一轮， WhiteHatCN 就把底边毒掉，我们又可以重新再拉一次。三个po毒两轮的话，就有六倍于前的 MUs，也就是说，核载四人的小轿车进化成了**核载二十四人的大客车**。
+这样情况就明朗了：在开牌之前，我先去一趟南沙摸key，并且带回岛上， Slcio 和 WhiteHatCN 则留在南沙。在开黑牌的时候，我们每完成一轮， WhiteHatCN 就把底边毒掉，我们又可以重新再拉一次。三个po毒两轮的话，就有六倍于前的 MUs，也就是说，核载四人的小轿车进化成了**核载二十四人的大客车**。
 
 这样一来，原本的半小时作业就拉长成了三个小时的大工程，附近的 ENL Agent 们肯定是不会坐看自己反复被盖的。
 
@@ -249,7 +247,7 @@ for (var i = 0; i < ENL.length; ++i)
 ```
 14时26分，**三队**人马站定，一声令下，动物园与博物馆的 block 齐声断裂，两条长 link 从大学城出发，走向顺德与南沙。然而，
 
-**为什么我的link没有field？**
+**为什么我的 link 没有 field ？**
 
 <p class="box" style="width:300px"><span class="name">WhiteHatCN</span><br>
 你们怎么样了？我马上到，2分钟内。</p>
@@ -280,6 +278,8 @@ Intel 看看怎么回事？</p>
 我就静静地坐在一个巨大的雕塑下面，看着 Ingress log 里面，临时上车的各位 Agent 各种群魔乱舞。不知不觉，时钟指向了18时10分。
 
 <p style="font-size:30px;font-weight:bold;;"> It's time to <del>move</del> /kaifan!</p>
+
+![kaifan](http://ovi1rdu1p.bkt.clouddn.com/kaifan-screen-shot.jpg)
 
 ## 0x06
 
@@ -316,7 +316,7 @@ Intel 看看怎么回事？</p>
 - ArielAxionL
 - WhiteHatCN    +
 
-此外，这12位 Agent 包揽了 AS13-NOVEMBER-01 2017.41 检查点的 TOP12。当然，荣耀同时也应归于清障 + 、hack key + 、传key + 的人。
+此外，这12位 Agent 包揽了 AS13-NOVEMBER-01 2017.41 检查点的 TOP12。荣耀同时也应归于清障 + 、hack key + 、传key + 的人。
 
 - este36
 - Sslian
@@ -326,3 +326,14 @@ Intel 看看怎么回事？</p>
 - Slcio
 - GwokTsyn
 - ccreamini
+
+## Appendix
+
+<p class="box" style="width:px"><span class="name">Howeverkcy </span><br>
+这是大学城三年以来第一次开黑牌！！感动至极</p>
+
+<p class="box" style="width:px"><span class="name">fishkq</span><br>
+多年之后，面对 iPhone XX ，萌新将会回想起，大佬带他去大学城开黑牌的那个遥远的下午。</p>
+
+<p class="box" style="width:px"><span class="name">EnlightenedMW</span><br>
+藍海裏的人有責任說出藍海的樣子</p>
