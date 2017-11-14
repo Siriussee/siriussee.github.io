@@ -135,7 +135,11 @@ table
 
 此时，Sources 窗口的 Simulation Sources 文件夹下会多出来一项 `alu_1_tb`。
 
-点击 '+' 展开，会发现里面有一个带问号标志的文件。双击 `alu_1_tb` 打开，将第32行的代码
+点击 '+' 展开，会发现里面有一个带问号标志的文件。
+
+![question](http://ovi1rdu1p.bkt.clouddn.com/question-mark-when-name-wrong.png)
+
+双击 `alu_1_tb` 打开，将第32行的代码
 
 ```
 alu_1_wrapper uut(.A(IN1[0]),.B(IN1[1]),.Cn(IN1[2]),.Cn_1(OUT1[1]),.GND(GND),.S0(IN1[3]),.S1(IN1[4]),.S2(IN1[5]),.Y(OUT1[0]));
@@ -165,7 +169,7 @@ ALU_demo_wrapper uut(.A(IN1[0]),.B(IN1[1]),.Cn(IN1[2]),.Cn_1(OUT1[1]),.GND(GND),
 
 ### 运行仿真
 
-> 从此处开始，我换用了另一个 project，因此文件名可能与上文不对应。但是
+> 从此处开始，我换用了另一个 project，因此文件名可能与上文不对应。
 
 在 Vivado 左侧栏点击 Run Simulation -> Run behaviar Simulation ，开始仿真，仿真所需的时间根据电脑性能而异。
 
