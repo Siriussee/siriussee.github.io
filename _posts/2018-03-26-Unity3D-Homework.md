@@ -44,7 +44,7 @@ tags:
 - 资源(Assets)就是可以在我们的项目中使用的文件，包括图像、视频、脚本文件、预制文件等，它们的存在不依赖于Unity。对象通过层次结构来组织，通过整体-部分的关系构成层次结构。
 - 对象可以通过资源来保存起来，资源可以用来创建对象实例，一个资源可以创建多个对象。
 
-###  MonoBehaviour 基本行为和常用事件
+### MonoBehaviour 基本行为和常用事件
 
 MonoBehaviour是每一个脚本对象的基类，这些方法会在运行的特定时间被调用
 
@@ -59,46 +59,48 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour {
-	void Awake()
-	{
-		Debug.Log("IsAwake");
-		this.enabled = true;
-	}
-	void FixedUpdate()
-	{
-		Debug.Log("IsFixedUpdate");
-	}
-	void LateUpdate()
-	{
-		Debug.Log("IsLateUpdate");
-	}
-	void Start () {
-		Debug.Log("Start");
-	}
-	void Update () {
-		Debug.Log("Update");
-	}
-	void OnGUI()
-	{
-		Debug.Log("OnGUI");
-	}
-	void OnDisable()
-	{
-		Debug.Log("OnDisable");
-	}
-	void OnEnable()
-	{
-		Debug.Log("OnEnable");
-		this.enabled = true;
-	}
+  void Awake()
+  {
+    Debug.Log("IsAwake");
+    this.enabled = true;
+  }
+  void FixedUpdate()
+  {
+    Debug.Log("IsFixedUpdate");
+  }
+  void LateUpdate()
+  {
+    Debug.Log("IsLateUpdate");
+  }
+  void Start () {
+    Debug.Log("Start");
+  }
+  void Update () {
+    Debug.Log("Update");
+  }
+  void OnGUI()
+  {
+    Debug.Log("OnGUI");
+  }
+  void OnDisable()
+  {
+    Debug.Log("OnDisable");
+  }
+  void OnEnable()
+  {
+    Debug.Log("OnEnable");
+    this.enabled = true;
+  }
 }
 ```
 
 点击上方 Play 按钮开始运行，得到输出如下：
-![console-output](test-event-in-console)
+
+![console-output](http://ovi1rdu1p.bkt.clouddn.com/test-event-in-console.png)
 
 可以得出结论，MonoBehaviour 事件的出发顺序是[1]：
-![order](http://gad.qq.com/article/detail/28796)
+\
+![order](http://ovi1rdu1p.bkt.clouddn.com/event-order.png)
 
 ### GameObject, Transform 与 Component 
 
@@ -113,7 +115,7 @@ public class NewBehaviourScript : MonoBehaviour {
 
 ### 描述 table 的对象属性，变换组件和组件
 
-![sample-img]()
+![sample-img](http://ovi1rdu1p.bkt.clouddn.com/sample-img.png)
 
 ```
 GameObjects =
@@ -133,7 +135,7 @@ Components =
 
 使用 [UMLet](http://www.umlet.com/changes.htm) 画出 UML 图
 
-![UML-of-sample]()
+![UML-of-sample](http://ovi1rdu1p.bkt.clouddn.com/UML-of-sample.jpg)
 
 ### 对象的基本操作
 
@@ -142,11 +144,11 @@ Components =
 ```C#
 //查找对象
 Find(name);
-FindWithTag(tag)	//按标签查找
-FindGameObjectsWithTag(tag)	//返回对象数组
+FindWithTag(tag)   //按标签查找
+FindGameObjectsWithTag(tag)   //返回对象数组
 //创建新的对象
 CreatePrimitive(type);
-Instantiate(source);	//通过复制创建对象
+Instantiate(source);   //通过复制创建对象
 //遍历
 foreach (Transform child in transform) {
     visit(child);
@@ -211,10 +213,10 @@ public class CPUscript : MonoBehaviour {//child
 ```c#
 for (int i = 0; i < 3; ++i)  
 {  
-	GUI.Button(new Rect(i * 50, j * 50, 50, 50), "") //checkerbox
+  GUI.Button(new Rect(i * 50, j * 50, 50, 50), "") //checkerbox
 }
-GUI.Button(new Rect(20, 300, 100, 50),"restart");	//restart button
-GUI.Box(new Rect(0, 200, 150, 90), "Result");	//result box
+GUI.Button(new Rect(20, 300, 100, 50),"restart");   //restart button
+GUI.Box(new Rect(0, 200, 150, 90), "Result");   //result box
 ```
 
 ### 井字棋的逻辑
@@ -225,40 +227,40 @@ GUI.Box(new Rect(0, 200, 150, 90), "Result");	//result box
 ```c#
 int winCheck()  
 {  
-	//row
-	for(int i = 0; i < 3; ++i)  
-	{  
-		if (checkerboard[i, 0] != 0 &&
-		checkerboard[i,0]==checkerboard[i, 1] && 
-		checkerboard[i, 1] == checkerboard[i, 2])  
-		{  
-		return checkerboard[i, 0];  //return winner's flag
-		}  
-	}  
-	//col
-	for (int i = 0; i < 3; ++i)  
-	{  
-		if (checkerboard[0, i] != 0 && 
-		checkerboard[0, i] == checkerboard[1, i] && 
-		checkerboard[1, i] == checkerboard[2, i])  
-		{  
-		return checkerboard[0, i];  
-		}  
-	}  
-	//cross line
-	if(checkerboard[1,1]!=0&&  
-		checkerboard[0,0]==checkerboard[1,1]&&  
-		checkerboard[1,1]==checkerboard[2,2]||  
-		checkerboard[0,2]==checkerboard[1,1]&&  
-		checkerboard[1,1]==checkerboard[2,0]  
-	)  
-	{  
-		return checkerboard[1, 1];  
-	}  
-	//dual
-	if (count == 9) return 3; 
-	//no result yet
-	return 0;  
+  //row
+  for(int i = 0; i < 3; ++i)  
+  {  
+    if (checkerboard[i, 0] != 0 &&
+    checkerboard[i,0]==checkerboard[i, 1] && 
+    checkerboard[i, 1] == checkerboard[i, 2])  
+    {  
+    return checkerboard[i, 0];  //return winner's flag
+    }  
+  }  
+  //col
+  for (int i = 0; i < 3; ++i)  
+  {  
+    if (checkerboard[0, i] != 0 && 
+    checkerboard[0, i] == checkerboard[1, i] && 
+    checkerboard[1, i] == checkerboard[2, i])  
+    {  
+    return checkerboard[0, i];  
+    }  
+  }  
+  //cross line
+  if(checkerboard[1,1]!=0&&  
+    checkerboard[0,0]==checkerboard[1,1]&&  
+    checkerboard[1,1]==checkerboard[2,2]||  
+    checkerboard[0,2]==checkerboard[1,1]&&  
+    checkerboard[1,1]==checkerboard[2,0]  
+  )  
+  {  
+    return checkerboard[1, 1];  
+  }  
+  //dual
+  if (count == 9) return 3; 
+  //no result yet
+  return 0;  
 } 
 ```
 ### 运行时的判定
@@ -269,14 +271,14 @@ int winCheck()
 //foe each in checkerboard
 if(GUI.Button("empty"))
 {
-	if(!End && Is0sTurn)
-		GUI.Button("Become0");
-	if(!End && IsXsTurn)
-		GUI.Button("BecomeX);
+  if(!End && Is0sTurn)
+    GUI.Button("Become0");
+  if(!End && IsXsTurn)
+    GUI.Button("BecomeX);
 }
 //restart
 if(GUI.Button("restart"))
-	restart();
+  restart();
 ```
 
 ### 综合
@@ -285,7 +287,12 @@ if(GUI.Button("restart"))
 
 最终效果如下：
 
+<video src="http://ovi1rdu1p.bkt.clouddn.com/u3d-hw1_x264.mp4" width="320" height="240" controls="controls">
+Your browser does not support the video tag.
+</video>
+
 ## REFERENCE
+
 [1] [腾讯GAD游戏开发者社区](http://gad.qq.com/article/detail/28796)
 
 [2] [官方文档](https://docs.unity3d.com/ScriptReference/Object.html)
