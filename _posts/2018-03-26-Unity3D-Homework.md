@@ -115,7 +115,7 @@ public class NewBehaviourScript : MonoBehaviour {
 
 ![sample-img]()
 
-```json
+```
 GameObjects =
 "name" : "table",
 "layer" : "Default",
@@ -282,6 +282,8 @@ if(GUI.Button("restart"))
 ### 综合
 
 最后整合一下代码，再调节一下 Button 的大小以便更加美观，就是最终的程序了。
+
+最终效果如下：
 
 ## REFERENCE
 [1] [腾讯GAD游戏开发者社区](http://gad.qq.com/article/detail/28796)
