@@ -287,7 +287,7 @@ if(GUI.Button("restart"))
 
 最终效果如下：
 
-<video src="http://ovi1rdu1p.bkt.clouddn.com/u3d-hw1_x264.mp4" width="320" height="240" controls="controls">
+<video src="http://ovi1rdu1p.bkt.clouddn.com/u3d-hw1_x264.mp4" width="720" height="540" controls="controls">
 Your browser does not support the video tag.
 </video>
 
