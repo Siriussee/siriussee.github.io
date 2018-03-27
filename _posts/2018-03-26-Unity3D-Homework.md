@@ -26,6 +26,8 @@ tags:
         - [对象的基本操作](#对象的基本操作)
         - [资源预设与对象克隆](#资源预设与对象克隆)
         - [组合模式](#组合模式)
+    - [井字棋](#井字棋)
+        - [测试 IMGUI](#测试-imgui)
     - [REFERENCE](#reference)
 
 <!-- /TOC -->
@@ -111,17 +113,17 @@ public class NewBehaviourScript : MonoBehaviour {
 
 ```json
 GameObjects =
-"name" : "table"
-"layer" : "Default"
-"tag"  "Untagged"
+"name" : "table",
+"layer" : "Default",
+"tag"  "Untagged",
 Transform = 
-"Position": (0, 0, 0)
-"Rotation": (0, 0, 0)
-"Scale" : (1, 1, 1)
+"Position": (0, 0, 0),
+"Rotation": (0, 0, 0),
+"Scale" : (1, 1, 1),
 Components =
-"Transform" : true
-"Mesh-filter" : true
-"Mesh-Renderer" : true
+"Transform" : true,
+"Mesh-filter" : true,
+"Mesh-Renderer" : true,
 "Box-Collider" : true
 ```
 
@@ -181,7 +183,23 @@ public class CPUscript : MonoBehaviour {//child
 }
 ```
 
+## 井字棋
+
+### 测试 IMGUI
+
+打开 [IMGUI unity官方文档](https://docs.unity3d.com/Manual/GUIScriptingGuide.html)，参考上面的代码，在 unity 中的空对象上添加 script
+
+```c#
+    void OnGUI() {
+        if (GUILayout.Button("Press Me"))
+            Debug.Log("Hello!");
+    }
+```
+
+开始运行，视图出现一个按钮。点击之，console 出现 hello 的 log。成功。
+
 ## REFERENCE
 
 [1] [腾讯GAD游戏开发者社区](http://gad.qq.com/article/detail/28796)
+
 [2] [官方文档](https://docs.unity3d.com/ScriptReference/Object.html)
