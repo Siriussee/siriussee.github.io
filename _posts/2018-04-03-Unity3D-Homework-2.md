@@ -24,6 +24,10 @@ tags:
             - [直接修改 transform 属性](#直接修改-transform-属性)
             - [transform.Translate](#transformtranslate)
             - [Vector3.MoveTowards](#vector3movetowards)
+        - [一个太阳系](#一个太阳系)
+            - [公转逻辑](#公转逻辑)
+            - [自转逻辑](#自转逻辑)
+        - [牧师与恶魔](#牧师与恶魔)
 
 <!-- /TOC -->
 
@@ -55,7 +59,7 @@ public class parabola1 : MonoBehaviour
 
 #### transform.Translate
 
-利用 [transform.Translate](https://docs.unity3d.com/ScriptReference/Transform.Translate.html) 函数，实现 向某方向移动物体多少距离 的功能。
+利用 [transform.Translate](https://docs.unity3d.com/ScriptReference/Transform.Translate.html) 函数，实现向某方向移动物体多少距离的功能。
 
 使用一个与时间有关的三维向量作为移动的速度。在本例中 x轴匀速运动， y轴加速运动，z轴静止。
 
@@ -77,17 +81,69 @@ public class parabola2 : MonoBehaviour {
 
 从 当前位置 transform.position，移向目标位置 new Vector3，最大长度随时间延长
 
-> 其实就是无线延申
+> 其实就是无限延申
 
 ```c#
 public class parabola3 : MonoBehaviour {
     public float acceleration = 1;
-    public float speed = 10;
-    void Update()
-    {
-        float step = speed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(Time.deltaTime * speed, Time.deltaTime * acceleration, 0), step);
-        acceleration++;
+    public float speed = 1;
+    void Update () {
+     transform.position = Vector3.MoveTowards(this.transform.position,
+         this.transform.position + new Vector3(-1, 
+         Time.deltaTime - 2 * this.transform.position.x) * Time.deltaTime,
+         speed*Time.deltaTime);
     }
 }
 ```
+
+### 一个太阳系
+
+先按照直觉，利用 GameObject 的 Sphere 搓出几个大小不一的球，然后按照太阳系的关系组织大小/距离和文件结构。
+
+得到一个排列整齐的太阳系。下面进行公转和自转的逻辑的编写。
+
+#### 公转逻辑
+
+一开始设定的是公转速度是随机数，运行后发现明显违反了直觉的物理规律。
+
+参考别人的博客之后，利用了物理学公式来使速度变得更合理。
+
+利用随机数创造一个向量，使行星的旋转不共面。
+
+```c#
+public class rotation : MonoBehaviour {
+    public Transform father;
+    private float r;
+    private float r_x;
+    private float r_y;
+    // Use this for initialization
+    void Start()
+    {
+        r = this.transform.position.x;
+        r_x = Random.Range(1, 3);
+        r_y = Random.Range(1, 3);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        Vector3 axis = new Vector3(r_x, r_y, 0);
+        float speed = 200.0f * Mathf.Sqrt(1.0f / (r * r * r));
+        this.transform.RotateAround(father.position, axis, speed * Time.deltaTime);
+    }
+}
+```
+
+#### 自转逻辑
+
+```c#
+    void Update()
+    {
+        this.transform.RotateAround(this.transform.position, Vector3.up, speed);
+    }
+```
+
+### 牧师与恶魔
+
+一个简单的游戏，就和狼和羊过河那个一样。
+
