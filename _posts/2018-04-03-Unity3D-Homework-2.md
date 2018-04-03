@@ -146,6 +146,8 @@ public class rotation : MonoBehaviour {
     }
 ```
 
+![soalrsystem](http://ovi1rdu1p.bkt.clouddn.com/solaysys.png)
+
 ### 牧师与恶魔
 
 一个简单的游戏，就和狼和羊过河那个一样。
