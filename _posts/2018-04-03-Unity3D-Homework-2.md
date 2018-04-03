@@ -28,6 +28,9 @@ tags:
             - [公转逻辑](#公转逻辑)
             - [自转逻辑](#自转逻辑)
         - [牧师与恶魔](#牧师与恶魔)
+            - [游戏中的对象](#游戏中的对象)
+            - [游戏的设计](#游戏的设计)
+                - [MVC 的结构](#mvc-的结构)
 
 <!-- /TOC -->
 
@@ -147,3 +150,36 @@ public class rotation : MonoBehaviour {
 
 一个简单的游戏，就和狼和羊过河那个一样。
 
+#### 游戏中的对象
+
+- 三个恶魔和三个牧师：在船-岸之间往复移动。
+- 一艘船：带有两个空槽，可以在两岸往复运动。存在游戏胜利的判定。
+- 两岸：各自带有六个空槽。存在游戏胜利的判定。
+- 水：只是背景。
+
+#### 游戏的设计
+
+由于要由空对象生成全部的对象，而且要使用MVC的结构程序，我智商捉急，就去参考了一下[优秀程序](https://www.jianshu.com/p/07028b3da573)，在理解的基础上完成了自己的游戏。
+
+##### MVC 的结构
+
+这个 Unity 的 MVC 结构要比我一开始想的类 Java 的 MVC 结构更加复杂一点，整体的逻辑构成如下：
+
+```
+Director
+|-  (SceneController)FirstController ~ (UserAction)ClickGUI
+    |-  (Moveable)MyCharacterController 
+    |-  (Moveable)BoatController
+    |-  CoastController
+```
+
+简言之，与我以前接触的 MVC 模式相比，就是增加了
+
+- 导演。这一部分相当于给程序多包了一层，问题不大。
+- 门面模式。这个东西是C-V之间的一个接口，相当于是给点击这个动作做了一个封装，封装为了一个函数，进一步降低了模块之间的耦合程度。
+
+这个是[我的项目文件](https://github.com/Siriussee/Unity3D-hw/tree/master/my_devil)
+
+<video src="http://ovi1rdu1p.bkt.clouddn.com/unity-hw2.mp4" width="720" height="540" controls="controls">
+Your browser does not support the video tag.
+</video>
