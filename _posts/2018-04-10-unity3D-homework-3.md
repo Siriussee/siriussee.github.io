@@ -47,26 +47,26 @@ tags:
 //去掉了无关部分的代码
 public class UserGUI : MonoBehaviour
 {
-	private GameObject Camera1;
-	private GameObject Camera0;
+    private GameObject Camera1;
+    private GameObject Camera0;
     void Start()
     {
-		Camera0=GameObject.Find("Main Camera");
-		Camera1=GameObject.Find("Camera1");
-		Camera1.active = true;
-		Camera0.active = false;
+        Camera0=GameObject.Find("Main Camera");
+        Camera1=GameObject.Find("Camera1");
+        Camera1.active = true;
+        Camera0.active = false;
     }
     void OnGUI()
     {
-		if(GUILayout.Button("Front",buttonStyle)){
-			Camera0.active=true;
-			Camera1.active=false;
-		}
+        if(GUILayout.Button("Front",buttonStyle)){
+            Camera0.active=true;
+            Camera1.active=false;
+        }
 
-		if(GUILayout.Button("Top",buttonStyle)){
-			Camera0.active=false;
-			Camera1.active=true;
-		}
+        if(GUILayout.Button("Top",buttonStyle)){
+            Camera0.active=false;
+            Camera1.active=true;
+        }
     }
 }
 
@@ -123,11 +123,11 @@ public enum SSActionEventType:int {Started,Completed}
 
 ```C#
 public interface ISSActionCallback{
-	void SSActionEvent(SSAction source,
-		SSActionEventType events = SSActionEventType.Completed,
-		int intParam = 0,
-		string strParam = null,
-		Object ObjectParam = null);
+    void SSActionEvent(SSAction source,
+        SSActionEventType events = SSActionEventType.Completed,
+        int intParam = 0,
+        string strParam = null,
+        Object ObjectParam = null);
 }
 ```
 事件完成回调函数接口。声明了回调函数的接口，所有有动作需要回调的类都必须继承并且实现它。
@@ -136,53 +136,53 @@ public interface ISSActionCallback{
 
 ```c#
 public class SSAction : ScriptableObject {
-	public bool enable = true;
-	public bool destory = false;
-	public GameObject gameobject { get; set;}
-	public Transform transform { get; set;}
-	public ISSActionCallback callback { get; set;}
-	protected SSAction();
-	public virtual void Start () ;
-	public virtual void Update ();
+    public bool enable = true;
+    public bool destory = false;
+    public GameObject gameobject { get; set;}
+    public Transform transform { get; set;}
+    public ISSActionCallback callback { get; set;}
+    protected SSAction();
+    public virtual void Start () ;
+    public virtual void Update ();
 }
 ```
 动作。抽象类/基类，不允许显式和隐式创建实例，有待下文实现其中的方法。继承 ScriptableObject 代表不受 Gameobj 绑定限制。
 
 ```c#
 public class CCMoveToAction : SSAction{
-	public Vector3 target;
-	public float speed = 10;
-	public static CCMoveToAction GetAction(Vector3 target, float speed);
-	public override void Start ();
-	public override void Update();
+    public Vector3 target;
+    public float speed = 10;
+    public static CCMoveToAction GetAction(Vector3 target, float speed);
+    public override void Start ();
+    public override void Update();
 }
 ```
 【移动到】动作。动作类的实现，用于物体的位移。
 
 ```c#
 public class CCSequenceAction : SSAction, ISSActionCallback{
-	public List<SSAction> sequence;
-	public int repeat = -1;
-	public int start = 0;
-	public void SSActionEvent(SSAction source,	SSActionEventType events,int intParam,string strParam ,Object ObjectParam);//实现ISSActionCallback
-	public static CCSequenceAction GetSSAction(int repeat, int start, List<SSAction> sequence);
-	public override void Update();
-	public void SSActionEvent (SSAction source, SSActionEventType events = SSActionEventType.Completed);
-	public override void Start();
-	void OnDestory();//释放内存
+    public List<SSAction> sequence;
+    public int repeat = -1;
+    public int start = 0;
+    public void SSActionEvent(SSAction source,    SSActionEventType events,int intParam,string strParam ,Object ObjectParam);//实现ISSActionCallback
+    public static CCSequenceAction GetSSAction(int repeat, int start, List<SSAction> sequence);
+    public override void Update();
+    public void SSActionEvent (SSAction source, SSActionEventType events = SSActionEventType.Completed);
+    public override void Start();
+    void OnDestory();//释放内存
 }
 ```
 【移动到】动作序列。或者可以理解为组合动作，可以保存一组动作，然后依次执行并在结束时调用回调函数，最后释放自己。
 
 ```c#
 public class SSActionManager :MonoBehaviour, ISSActionCallback{
-	private Dictionary<int, SSAction> actions = new Dictionary<int,SSAction>();
-	private List<SSAction> waitingAdd = new List<SSAction>();
-	private List<int> waitingDelete = new List<int>();
-	public void SSActionEvent(SSAction source,	SSActionEventType events,int intParam,string strParam ,Object ObjectParam);
-	protected void Update();
-	public void RunAction(GameObject gameobject, SSAction action ,ISSActionCallback manager);
-	protected void Start();
+    private Dictionary<int, SSAction> actions = new Dictionary<int,SSAction>();
+    private List<SSAction> waitingAdd = new List<SSAction>();
+    private List<int> waitingDelete = new List<int>();
+    public void SSActionEvent(SSAction source,    SSActionEventType events,int intParam,string strParam ,Object ObjectParam);
+    protected void Update();
+    public void RunAction(GameObject gameobject, SSAction action ,ISSActionCallback manager);
+    protected void Start();
 }
 ```
 动作管理类。管理上面的【移动到】动作和【移动到】动作序列，建立了一个字典来存放全部的动作，然后在 `update()` 函数中一个个把他们完成掉。虽然说在这么一个结构比较简单的游戏里面比较多余，但是既然放进PPT了那就干脆也对着敲下来算了……
@@ -191,27 +191,27 @@ public class SSActionManager :MonoBehaviour, ISSActionCallback{
 public class MySSActionManager : SSActionManager{
 
 
-		public void MoveBoat(BoatController BoatController){
-			CCMoveToAction action = CCMoveToAction.GetAction (BoatController.getEmptyPosition(), 20f);
-			RunAction (BoatController.getGameobj(), action, this);		
-		}	
+        public void MoveBoat(BoatController BoatController){
+            CCMoveToAction action = CCMoveToAction.GetAction (BoatController.getEmptyPosition(), 20f);
+            RunAction (BoatController.getGameobj(), action, this);        
+        }    
 
-		public void MoveCharacter(MyCharacterController characterCtrl, Vector3 destination) {
-			
-			Vector3 currPos = characterCtrl.getCharacter().transform.position;
-			Vector3 midPos = currPos;
+        public void MoveCharacter(MyCharacterController characterCtrl, Vector3 destination) {
+            
+            Vector3 currPos = characterCtrl.getCharacter().transform.position;
+            Vector3 midPos = currPos;
 
-			if (destination.y > currPos.y) 
-				midPos.y = destination.y;
-			else 
-				midPos.x = destination.x;
-			
-			SSAction action1 = CCMoveToAction.GetAction(midPos, 20f);
-			SSAction action2 = CCMoveToAction.GetAction(destination, 20f);
-			SSAction seqAction = CCSequenceAction.GetSSAction(1, 0, new List<SSAction> { action1, action2 });
+            if (destination.y > currPos.y) 
+                midPos.y = destination.y;
+            else 
+                midPos.x = destination.x;
+            
+            SSAction action1 = CCMoveToAction.GetAction(midPos, 20f);
+            SSAction action2 = CCMoveToAction.GetAction(destination, 20f);
+            SSAction seqAction = CCSequenceAction.GetSSAction(1, 0, new List<SSAction> { action1, action2 });
 
-			RunAction(characterCtrl.getCharacter(), seqAction, this);
-		}	
+            RunAction(characterCtrl.getCharacter(), seqAction, this);
+        }    
 }
 ```
 动作管理类的实现。把动作管理与游戏的实际动作链接起来，负责【将什么样的动作放入序列】，并交付动作管理类执行。
@@ -233,8 +233,8 @@ public class MyFirstController : MonoBehaviour,SceneController ,UserAction{
 
 
 ```c#
-public class SSActionManager :MonoBehaviour, ISSActionCallback{
-	public void SSActionEvent(SSAction source,	SSActionEventType events,int intParam,string strParam ,Object ObjectParam){}
+public class SSActionManager :MonoBehaviour,ISSActionCallback{
+    public void SSActionEvent(SSAction source,SSActionEventType events,int intParam,string strParam ,Object ObjectParam){}
 ```
 我一开始看着上面 CCSequenceAction 已经实现了回调函数的接口了，就没有必要再在管理类里面再继承并且实现一次了，结果又报错 `no impl` ，又重新看了一眼，将信将疑的把实现加上去。
 
